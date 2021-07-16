@@ -1,0 +1,229 @@
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-item {
+  width: 100%;
+  box-sizing: content-box;
+  height: 480px;
+  background-color: white;
+}
+.egg,
+.stand-out,
+.cherry,
+.orange {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.egg {
+  height: 310px;
+  background-image: url("../../images/mobile/image-transform.jpg");
+}
+.stand-out {
+  background-image: url("../../images/mobile/image-stand-out.jpg");
+  height: 310px;
+}
+.cherry {
+  background-image: url("../../images/mobile/image-graphic-design.jpg");
+}
+.cherry,
+.orange {
+  order: 5;
+  background-image: url("../../images/desktop/image-graphic-design.jpg");
+  padding: 320px 3% 3% 3%;
+  box-sizing: border-box;
+}
+.cherry h2,
+.orange h2 {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+.cherry p,
+.orange p {
+  font-size: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin: 5% 5% 0;
+}
+.orange {
+  order: 6;
+  background-image: url("../../images/desktop/image-photography.jpg");
+}
+.Transform,
+.stand-out-Text {
+  padding: 8% 6%;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
+.Transform h2,
+.stand-out-Text h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.9rem;
+}
+.Transform a,
+.stand-out-Text a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+}
+.Transform p,
+.stand-out-Text p {
+  margin: 1.6rem 0 7rem 0;
+  font-size: 1.3em;
+  text-align: justify;
+}
+/* card */
+.views {
+  padding: 12%;
+  text-align: center;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  gap: 65px;
+}
+.client {
+  text-transform: uppercase;
+  color: hsl(210, 4%, 67%);
+  letter-spacing: 3px;
+  font-size: 25px;
+  margin-bottom: 65px;
+}
+.card {
+  justify-content: space-between;
+  max-width: 300px;
+  box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px,
+    rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+  padding: 1rem;
+}
+.card img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.comment {
+  text-align: left;
+  padding: 1rem;
+  color: hsl(213, 9%, 39%);
+}
+.clientName {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.clientJob {
+  color: hsl(210, 4%, 67%);
+}
+/* images */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cube,
+.cone,
+.orangeB,
+.bottle {
+  height: 190px;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cube {
+  background-image: url("../../images/mobile/image-gallery-sugar-cubes.jpg");
+}
+.cone {
+  background-image: url("../../images/mobile/image-gallery-cone.jpg");
+}
+.orangeB {
+  background-image: url("../../images/mobile/image-gallery-orange.jpg");
+}
+.bottle {
+  background-image: url("../../images/mobile/image-gallery-milkbottles.jpg");
+}
+/* footer */
+.footerNav{
+  display: flex;
+  justify-content: center;
+}
+.footerNav li,.attribution {
+  padding: 1.6rem;
+  font-weight: bold;
+}
+.attribution{
+  font-size: 0.8em;
+}
+.footerNav{
+ color:  hsl(168, 34%, 41%);
+ font-weight: bold;
+}
+.footer{
+  background-color: #90d4c5;
+  padding-top: 65px;
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+  .images {
+    flex-wrap: nowrap;
+  }
+  .flex-item {
+    width: 50%;
+  }
+  .Transform {
+    order: 1;
+  }
+  .egg {
+    order: 2;
+    background-image: url("../../images/desktop/image-transform.jpg");
+    height: auto;
+  }
+  .stand-out {
+    order: 3;
+    background-image: url("../../images/desktop/image-stand-out.jpg");
+    height: auto;
+  }
+  .stand-out-Text {
+    order: 4;
+  }
+  .cherry {
+    order: 5;
+    background-image: url("../../images/desktop/image-graphic-design.jpg");
+  }
+  .orange {
+    order: 6;
+    background-image: url("../../images/desktop/image-photography.jpg");
+  }
+  .cube {
+    background-image: url("../../images/desktop/image-gallery-sugarcubes.jpg");
+  }
+  .cone {
+    background-image: url("../../images/desktop/image-gallery-cone.jpg");
+  }
+  .orangeB {
+    background-image: url("../../images/desktop/image-gallery-orange.jpg");
+  }
+  .bottle {
+    background-image: url("../../images/desktop/image-gallery-milkbottles.jpg");
+  }
+  .cube,
+  .cone,
+  .orangeB,
+  .bottle {
+    height: 450px;
+  }
+ 
+}
+@media only screen and (min-width: 1000px) {
+  .container {
+    display: flex;
+  }
+  .client{
+    font-size: 35px;
+  }
+}

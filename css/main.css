@@ -1,0 +1,25 @@
+
+* {
+    margin:0;
+    
+    box-sizing: 0;
+    padding: 0;
+    -webkit-box-sizing: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    text-align: center;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}

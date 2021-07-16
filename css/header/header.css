@@ -1,0 +1,111 @@
+.header {
+  background-image: url("../../images/desktop/image-header.jpg");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+}
+.navList {
+  list-style: none;
+  display: flex;
+  color: #fff;
+}
+.navList li {
+  padding: 9px 12px 9px 12px;
+}
+.navList li:hover {
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+}
+.navListMobile {
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  height: 310px;
+
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 100px;
+  right: 25px;
+  left: 25px;
+  color: black;
+}
+.logo {
+  width: 100%;
+}
+.navListMobile li:hover {
+  padding: 12px 15px 12px 15px;
+  background-color: rgb(247, 247, 62);
+  border-radius: 50px;
+}
+/* ------------------ */
+.bodyHeaderText h1 {
+  font-size: 3.5rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  word-wrap: break-word;
+}
+.bodyHeaderArrow {
+  text-align: center;
+}
+/* -------------------- */
+.menu_on {
+  display: none;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.menu_on span {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  background: #fff;
+  transition: all 0.25s ease;
+  transform-origin: 0px 100%;
+}
+.menu_on:active {
+  color: blue;
+}
+.menu_on span:nth-child(2) {
+  top: calc(50% - 2px);
+}
+.menu_on span:nth-child(3) {
+  bottom: 0;
+}
+/*  */
+@media only screen and (max-width: 800px) {
+  .header {
+    background-image: url("../../images/mobile/image-header.jpg");
+    height: 535px;
+  }
+  .navList {
+    display: none;
+  }
+
+  .menu_on {
+    display: inline-block;
+  }
+}
